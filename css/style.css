@@ -1,19 +1,107 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: "Merriweather", serif;
+}
+
+/* 
+// 100 – Thin.
+// 200 – Extra Light (Ultra Light)
+// 300 – Light.
+// 400 – Normal.
+// 500 – Medium.
+// 600 – Semi Bold (Demi Bold)
+// 700 – Bold.
+// 800 – Extra Bold (Ultra Bold)
+// 900 – Black. */
+
+
+h1 {
+    font-size: 88px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 95px;
+}
+
+h3 {
+    font-size: 64px;
+    line-height: 88px;
+    font-weight: 900;
+    letter-spacing: 11%;
+}
+
+h4 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 32px;
+}
+
+h6 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 ul,
 li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
+
 .container {
-  max-width: 1200px;
-  padding: 0px 12px;
-  margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 12px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* banner section */
+
+.banner-content {
+    margin-top: 10px;
+}
+
+.banner-content .images-overlay {
+    position: relative;
+}
+
+.banner-content .images-overlay img {
+    width: 100%;
+}
+
+.banner-content .images-overlay .overlay {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 100%;
+    height: 99%;
+}
+
+.banner-content .images-overlay .overlay .title {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
